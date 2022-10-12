@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Project Bootstrap</title>
+  </head>
+  <body>
+    <!-- S T A R T   H E A D E R -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-transparent fixed-top navbar-dark text-light"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Mogo</a>
+
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="order-0 order-lg-1 d-flex pt-2">
+            <a class="nav-link me-3" href="#"
+              ><i class="material-icons-outlined"> shopping_cart </i></a
+            >
+            <a class="nav-link" href="#"
+              ><i class="material-icons-outlined"> search </i></a
+            >
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto gap-3 me-3">
+              <li class="nav-item text-uppercase">
+                <a class="nav-link active" aria-current="page" href="#">home</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="#">about</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="#">services</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="#">our team</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="#">work</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="#">blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- E N D   H E A D E R -->
+
+    <!-- S T A R T   S L I D E R-->
+    <section class="slider position-relative pb-3">
+      <div class="container">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide vh-100"
+          data-bs-ride="false"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active text-light text-start"
+              aria-current="true"
+              aria-label="Slide 1"
+            >
+              <span class="fw-bold">01</span> INTRO
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              class="text-start text-light"
+              aria-label="Slide 2"
+            >
+              <span class="fw-bold">02</span> WORK
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              class="text-start text-light"
+              aria-label="Slide 3"
+            >
+              <span class="fw-bold">03</span> ABOUT
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              class="text-start text-light"
+              aria-label="Slide 4"
+            >
+              <span class="fw-bold">04</span> CONTACTS
+            </button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active vh-100">
+              <div class="carousel-caption d-md-block">
+                <h1 class="custom-heading">Creative Template</h1>
+                <h2 class="custom-underline mb-5">
+                  WELCOME<br />
+                  TO MOGO
+                </h2>
+                <button class="btn border text-light">Learn More</button>
+              </div>
+            </div>
+            <div class="carousel-item vh-100">
+              <div class="carousel-caption d-md-block">
+                <h1 class="custom-heading">Creative Template</h1>
+                <h2 class="custom-underline mb-5">
+                  WELCOME<br />
+                  TO MOGO
+                </h2>
+                <button class="btn border text-light">Learn More</button>
+              </div>
+            </div>
+            <div class="carousel-item vh-100">
+              <div class="carousel-caption d-md-block">
+                <h1 class="custom-heading">Creative Template</h1>
+                <h2 class="custom-underline mb-5">
+                  WELCOME<br />
+                  TO MOGO
+                </h2>
+                <button class="btn border text-light">Learn More</button>
+              </div>
+            </div>
+            <div class="carousel-item vh-100">
+              <div class="carousel-caption d-md-block">
+                <h1 class="custom-heading">Creative Template</h1>
+                <h2 class="custom-underline mb-5">
+                  WELCOME<br />
+                  TO MOGO
+                </h2>
+                <button class="btn border text-light">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   S L I D E R-->
+
+    <!-- S T A R T   A B O U T-->
+    <section class="about mt-5 mb-5">
+      <div class="container text-center">
+        <h3 class="mb-3 custom-heading">What we do</h3>
+        <h2 class="text-uppercase custom-underline mb-5">story about us</h2>
+        <p class="mb-5 ps-5 pe-5 fw-lighter">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div class="images">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="bg mb-3">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/images/our-story/img-1.jpg"
+                  alt="our-story"
+                />
+                <div
+                  class="overlay d-flex align-items-center justify-content-center"
+                >
+                  <span class="material-icons text-light">person</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="bg mb-3">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/images/our-story/img-3.jpg"
+                  alt="our-story"
+                />
+                <div
+                  class="overlay d-flex align-items-center justify-content-center"
+                >
+                  <span class="material-icons text-light">person</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="bg mb-3">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/images/our-story/img-2.jpg"
+                  alt="our-story"
+                />
+                <div
+                  class="overlay d-flex align-items-center justify-content-center"
+                >
+                  <span class="material-icons text-light">person</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   A B O U T-->
+
+    <!-- S T A R T   S T A T S-->
+    <section class="stats mb-5">
+      <div class="content container">
+        <div class="row">
+          <div class="col-md col-sm-4">
+            <div
+              class="item text-center text-light border-light border-end border-start pt-4 pb-4 h-100"
+            >
+              <div class="number fw-bolder">42</div>
+              <div class="text text-capitalize">Web Design Projects</div>
+            </div>
+          </div>
+          <div class="col-md col-sm-4">
+            <div
+              class="item text-center text-light border-light border-end pt-4 pb-4 pe-3 h-100"
+            >
+              <div class="number fw-bolder">123</div>
+              <div class="text text-capitalize">happy client</div>
+            </div>
+          </div>
+          <div class="col-md col-sm-4">
+            <div
+              class="item text-center text-light border-light border-end pt-4 pb-4 pe-3 h-100"
+            >
+              <div class="number fw-bolder">15</div>
+              <div class="text text-capitalize">award winner</div>
+            </div>
+          </div>
+          <div class="col-md col-sm-4">
+            <div
+              class="item text-center text-light border-light border-end pt-4 pb-4 pe-3 h-100"
+            >
+              <div class="number fw-bolder">99</div>
+              <div class="text text-capitalize">cup of coffee</div>
+            </div>
+          </div>
+          <div class="col-md col-sm-4">
+            <div
+              class="item text-center text-light border-light border-end pt-4 pb-4 pe-3 h-100"
+            >
+              <div class="number fw-bolder">24</div>
+              <div class="text text-capitalize">members</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   S T A T S-->
+
+    <!-- S T A R T   S E R V I C E S-->
+    <section class="services mb-5">
+      <div class="container">
+        <h3 class="mb-3 custom-heading text-center">We work with</h3>
+        <h2 class="text-uppercase mb-5 custom-underline text-center">
+          amazing services
+        </h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 item border-bottom mt-2">
+            <div class="row">
+              <span class="material-icons-outlined col-1">
+                panorama_horizontal
+              </span>
+              <div class="col-11">
+                <h4>Photography</h4>
+                <p class="fw-lighter">
+                  Photography is the science, art and practice of creating
+                  durable images by recording light or other electromagnetic
+                  radiation
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 item border-bottom mt-2">
+            <div class="row">
+              <span class="material-icons-outlined col-1"> shutter_speed </span>
+              <div class="col-11">
+                <h4>Web Design</h4>
+                <p class="fw-lighter">
+                  Web design encompasses many different skills and disciplines
+                  in the production and maintenance of websites.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 item border-bottom mt-2">
+            <div class="row">
+              <span class="material-icons-outlined col-1"> broken_image </span>
+              <div class="col-11">
+                <h4>Creativity</h4>
+                <p class="fw-lighter">
+                  Creativity is a phenomenon whereby something new and somehow
+                  valuable is formed. The created item may be intangible or a
+                  physical object.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 item mt-2 service-border">
+            <div class="row">
+              <span class="material-icons-outlined col-1"> photo_filter </span>
+              <div class="col-11">
+                <h4>seo</h4>
+                <p class="fw-lighter">
+                  Search engine optimization (SEO) is the process of affecting
+                  the visibility of a website or a web page in a web search
+                  engine's unpaid results.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 item mt-2 service-border">
+            <div class="row">
+              <span class="material-icons-outlined col-1"> broken_image </span>
+              <div class="col-11">
+                <h4>Css/Html</h4>
+                <p class="fw-lighter">
+                  HyperText Markup Language, commonly abbreviated as HTML, is
+                  the standard markup language used to create web pages.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 item mt-2 service-border">
+            <div class="row">
+              <span class="material-icons-outlined col-1">
+                center_focus_strong
+              </span>
+              <div class="col-11">
+                <h4>digital</h4>
+                <p class="fw-lighter">
+                  With digital signals, system noise, provided it is not too
+                  great, will not change the quantification whereas with signals
+                  handled using analog processing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   S E R V I C E S-->
+
+    <!-- S T A R T   U N I Q U E-->
+    <section class="unique vh-100 mt-5 mb-5 pt-5 position-relative">
+      <div class="container text-center d-flex flex-column gap-5">
+        <div class="unique-head">
+          <h3 class="mb-3 custom-heading">For all devices</h3>
+          <h2 class="text-uppercase custom-underline mb-5">UNIQUE DESIGN</h2>
+        </div>
+
+        <div class="img position-absolute bottom-0 start-50 translate-middle-x">
+          <img src="./assets/images/unique-design/img-1.png" alt="mobile" />
+          <div class="inner-img">
+            <img
+              class="position-absolute left-50"
+              src="./assets/images/unique-design/img-2.png"
+              alt="small-mobile"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   U N I Q U E-->
+
+    <!-- S T A R T   W H A T   W E   D O-->
+    <section class="what-we-do mb-5 pt-5">
+      <div class="container text-center">
+        <h3 class="mb-3 custom-heading">Service</h3>
+        <h2 class="text-uppercase custom-underline mb-5">WHAT WE DO</h2>
+        <p class="mb-5 ps-5 pe-5 fw-lighter">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div class="wwdo-content">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="item">
+                <img class="w-100" src="./assets/images/what-we-do/img-1.jpg" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="item">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item mb-2 rounded-0">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <img
+                          src="./assets/images/what-we-do/1.png"
+                          class="me-3"
+                        />
+                        <span class="text-muted">PHOTOGRAPHY</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft
+                        beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore
+                        sustainable VHS. Anim pariatur cliche reprehenderit,
+                        enim eiusmod high life accusamus terry richardson ad
+                        squid. 3 wolf moon officia aute, non cupidatat
+                        skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                        put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic
+                        synth nesciunt you probably haven't heard of them
+                        accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item mb-2 rounded-0">
+                    <h2 class="accordion-header" id="headingtwo">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
+                        <img
+                          class="me-3"
+                          src="./assets/images/what-we-do/2.png"
+                        />
+                        <span class="text-muted">WEB DESIGN</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingtwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft
+                        beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore
+                        sustainable VHS. Anim pariatur cliche reprehenderit,
+                        enim eiusmod high life accusamus terry richardson ad
+                        squid. 3 wolf moon officia aute, non cupidatat
+                        skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                        put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic
+                        synth nesciunt you probably haven't heard of them
+                        accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item mb-2 rounded-0">
+                    <h2 class="accordion-header" id="headingthree">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="true"
+                        aria-controls="collapseThree"
+                      >
+                        <img
+                          class="me-3"
+                          src="./assets/images/what-we-do/3.png"
+                        />
+                        <span class="text-muted">CREATIVITY</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingthree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft
+                        beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore
+                        sustainable VHS. Anim pariatur cliche reprehenderit,
+                        enim eiusmod high life accusamus terry richardson ad
+                        squid. 3 wolf moon officia aute, non cupidatat
+                        skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                        put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic
+                        synth nesciunt you probably haven't heard of them
+                        accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   W H A T   W E   D O-->
+
+    <!-- S T A R T   T E S T I M O N I A L S-->
+    <section class="testimonials-one bg-light mt-5 mb-5 pt-5 pb-5">
+      <div class="container">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active text-dark"
+              data-bs-interval="10000"
+            >
+              <div class="row text-center px-5">
+                <div class="col-2">
+                  <div
+                    class="icon d-flex align-items-center justify-content-center ms-5"
+                  >
+                    <i class="material-icons-outlined p-2"> chat </i>
+                  </div>
+                </div>
+                <div class="col-10 text-start px-5 text-muted">
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                  </p>
+                  <span class="name custom-heading position-relative ms-5"
+                    >Jon Doe
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item text-dark" data-bs-interval="10000">
+              <div class="row text-center px-5">
+                <div class="col-2">
+                  <div
+                    class="icon d-flex align-items-center justify-content-center ms-5"
+                  >
+                    <i class="material-icons-outlined p-2"> chat </i>
+                  </div>
+                </div>
+                <div class="col-10 text-start px-5 text-muted">
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                  </p>
+                  <span class="name custom-heading position-relative ms-5"
+                    >Jon Doe
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   T E S T I M O N I A L S-->
+
+    <!-- S T A R T   O U R   T E A M-->
+    <section class="our-team mb-5">
+      <div class="container text-center">
+        <h3 class="mb-3 custom-heading">What we do</h3>
+        <h2 class="text-uppercase custom-underline mb-5">story about us</h2>
+        <p class="mb-5 ps-5 pe-5 fw-lighter">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div class="images">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="bg mb-3">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/images/our-team/img-1.jpg"
+                  alt="our-story"
+                />
+                <div
+                  class="overlay d-flex align-items-center justify-content-center"
+                >
+                  <span class="material-icons">person</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="bg mb-3">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/images/our-team/img-3.jpg"
+                  alt="our-story"
+                />
+                <div
+                  class="overlay d-flex align-items-center justify-content-center"
+                >
+                  <span class="material-icons">person</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="bg mb-3">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/images/our-team/img-2.jpg"
+                  alt="our-story"
+                />
+                <div
+                  class="overlay d-flex align-items-center justify-content-center"
+                >
+                  <span class="material-icons">person</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   O U R   T E A M-->
+
+    <!-- S T A R T   B R A N D S-->
+    <section class="brands mb-5 bg-light pt-3 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-4">
+            <div class="item">
+              <img class="w-100" src="./assets/images/brand/img-1.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4">
+            <div class="item">
+              <img class="w-100" src="./assets/images/brand/img-2.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4">
+            <div class="item">
+              <img class="w-100" src="./assets/images/brand/img-3.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4">
+            <div class="item">
+              <img class="w-100" src="./assets/images/brand/img-4.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4">
+            <div class="item">
+              <img class="w-100" src="./assets/images/brand/img-5.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4">
+            <div class="item">
+              <img class="w-100" src="./assets/images/brand/img-6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   B R A N D S-->
+
+    <!-- S T A R T   G A L L A R Y-->
+    <section class="gallary overflow-hidden">
+      <div class="row">
+        <div class="col-3 g-0">
+          <div class="row">
+            <div class="col-12">
+              <img
+                class="w-100"
+                src="./assets/images/our-work/img-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-12">
+              <img
+                class="w-100"
+                src="./assets/images/our-work/img-5.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-3 g-0">
+          <div class="row">
+            <div class="col-12">
+              <img
+                class="w-100"
+                src="./assets/images/our-work/img-2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-12">
+              <img
+                class="w-100"
+                src="./assets/images/our-work/img-6.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-3 g-0">
+          <img class="w-100" src="./assets/images/our-work/img-3.jpg" alt="" />
+        </div>
+        <div class="col-3 g-0">
+          <div class="row">
+            <div class="col-12">
+              <img
+                class="w-100"
+                src="./assets/images/our-work/img-4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-12">
+              <img
+                class="w-100"
+                src="./assets/images/our-work/img-7.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   G A L L A R Y-->
+
+    <!-- S T A R T   T E S T I M O N I A L S-->
+    <section class="testimonials-two mt-5 mb-5 pt-5 pb-5">
+      <div class="container">
+        <div
+          id="testimonials-two"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active text-dark"
+              data-bs-interval="10000"
+            >
+              <div class="row text-center px-5 align-items-center">
+                <div class="col-3">
+                  <div
+                    class="img d-flex align-items-center justify-content-center ms-md-5"
+                  >
+                    <img
+                      class="w-75 rounded-circle p-1 border border-light border-3"
+                      src="./assets/images/testimonial/img-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-9 text-start pe-5 text-muted">
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                  </p>
+                  <span class="name custom-heading position-relative ms-5"
+                    >Jon Doe
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item text-dark" data-bs-interval="10000">
+              <div class="row text-center px-5 align-items-center">
+                <div class="col-3">
+                  <div
+                    class="img d-flex align-items-center justify-content-center ms-md-5"
+                  >
+                    <img
+                      class="w-75 rounded-circle p-1 border border-light border-3"
+                      src="./assets/images/testimonial/img-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-9 text-start pe-5 text-muted">
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                  </p>
+                  <span class="name custom-heading position-relative ms-5"
+                    >Jon Doe
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item text-dark" data-bs-interval="10000">
+              <div class="row text-center px-5 align-items-center">
+                <div class="col-3">
+                  <div
+                    class="img d-flex align-items-center justify-content-center ms-md-5"
+                  >
+                    <img
+                      class="w-75 rounded-circle p-1 border border-light border-3"
+                      src="./assets/images/testimonial/img-3.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-9 text-start pe-5 text-muted">
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                  </p>
+                  <span class="name custom-heading position-relative ms-5"
+                    >Jon Doe
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonials-two"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonials-two"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   T E S T I M O N I A L S -->
+
+    <!-- S T A R T   H A P P Y   C L I E N T S -->
+    <section class="happy-clients py-5 my-5">
+      <div class="container">
+        <h3 class="mb-3 custom-heading text-center">Happy Clients</h3>
+        <h2 class="text-uppercase mb-5 custom-underline text-center">
+          WHAT PEOPLE SAY
+        </h2>
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="rounded-circle w-100"
+                  src="./assets/images/happy-client/img-1.jpg"
+                  alt="person"
+                />
+              </div>
+              <div class="col-10">
+                <h5>MATTHEW DIX</h5>
+                <p
+                  class="custom-underline clients d-inline-block fst-italic text-muted fw-normal mb-4"
+                >
+                  Graphic Design
+                </p>
+                <p class="fw-lighter">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                  illo cupiditate temporibus sapiente, sint, voluptatibus
+                  tempora esse. Consectetur voluptate nihil quo nulla voluptatem
+                  dolorem harum nostrumn
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="rounded-circle w-100"
+                  src="./assets/images/happy-client/img-2.jpg"
+                  alt="person"
+                />
+              </div>
+              <div class="col-10">
+                <h5>MATTHEW DIX</h5>
+                <p
+                  class="custom-underline clients d-inline-block fst-italic text-muted fw-normal mb-4"
+                >
+                  Graphic Design
+                </p>
+                <p class="fw-lighter">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                  illo cupiditate temporibus sapiente, sint, voluptatibus
+                  tempora esse. Consectetur voluptate nihil quo nulla voluptatem
+                  dolorem harum nostrumn
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="rounded-circle w-100"
+                  src="./assets/images/happy-client/img-3.jpg"
+                  alt="person"
+                />
+              </div>
+              <div class="col-10">
+                <h5>MATTHEW DIX</h5>
+                <p
+                  class="custom-underline clients d-inline-block fst-italic text-muted fw-normal mb-4"
+                >
+                  Graphic Design
+                </p>
+                <p class="fw-lighter">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                  illo cupiditate temporibus sapiente, sint, voluptatibus
+                  tempora esse. Consectetur voluptate nihil quo nulla voluptatem
+                  dolorem harum nostrumn
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="rounded-circle w-100"
+                  src="./assets/images/happy-client/img-4.jpg"
+                  alt="person"
+                />
+              </div>
+              <div class="col-10">
+                <h5>MATTHEW DIX</h5>
+                <p
+                  class="custom-underline clients d-inline-block fst-italic text-muted fw-normal mb-4"
+                >
+                  Graphic Design
+                </p>
+                <p class="fw-lighter">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                  illo cupiditate temporibus sapiente, sint, voluptatibus
+                  tempora esse. Consectetur voluptate nihil quo nulla voluptatem
+                  dolorem harum nostrumn
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   H A P P Y   C L I E N T S -->
+
+    <!-- S T A R T   O U R   S T O R I E S -->
+    <section class="our-stories py-5 my-5">
+      <h3 class="mb-3 custom-heading text-center">Our stories</h3>
+      <h2 class="text-uppercase mb-5 custom-underline text-center">
+        LATEST BLOG
+      </h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="card border-0 position-relative">
+              <img
+                src="./assets/images/our-blog/img-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-title">LOREM IPSUM DOLOR SIT AMET</p>
+                <p class="card-text text-muted border-bottom pb-2">
+                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="card-body fst-italic">
+                <a href="#" class="card-link text-decoration-none d-inline-flex"
+                  ><i class="material-icons-outlined"> visibility </i>
+                  <span class="text-muted">543</span></a
+                >
+                <a href="#" class="card-link text-decoration-none d-inline-flex"
+                  ><i class="material-icons-outlined"> question_answer </i>
+                  <span class="text-muted">15</span></a
+                >
+              </div>
+              <div
+                class="card-date position-absolute d-flex align-items-center justify-content-center flex-column"
+              >
+                <h5>15</h5>
+                <span>Jan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-12">
+            <div class="card border-0 position-relative">
+              <img
+                src="./assets/images/our-blog/img-2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-title">SED DO EIUSMOD TEMPOR</p>
+                <p class="card-text text-muted border-bottom pb-2">
+                  Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+              </div>
+              <div class="card-body fst-italic">
+                <a href="#" class="card-link text-decoration-none d-inline-flex"
+                  ><i class="material-icons-outlined"> visibility </i>
+                  <span class="text-muted">543</span></a
+                >
+                <a href="#" class="card-link text-decoration-none d-inline-flex"
+                  ><i class="material-icons-outlined"> question_answer </i>
+                  <span class="text-muted">15</span></a
+                >
+              </div>
+              <div
+                class="card-date position-absolute d-flex align-items-center justify-content-center flex-column"
+              >
+                <h5>15</h5>
+                <span>Jan</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="card border-0 position-relative">
+              <img
+                src="./assets/images/our-blog/img-3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-title">INCIDIDUNT UT LABORE ET DOLORE</p>
+                <p class="card-text text-muted border-bottom pb-2">
+                  Elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+              </div>
+              <div class="card-body fst-italic">
+                <a href="#" class="card-link text-decoration-none d-inline-flex"
+                  ><i class="material-icons-outlined"> visibility </i>
+                  <span class="text-muted">1252</span></a
+                >
+                <a href="#" class="card-link text-decoration-none d-inline-flex"
+                  ><i class="material-icons-outlined"> question_answer </i>
+                  <span class="text-muted">60</span></a
+                >
+              </div>
+              <div
+                class="card-date position-absolute d-flex align-items-center justify-content-center flex-column"
+              >
+                <h5>12</h5>
+                <span>Jan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D   O U R   S T O R I E S -->
+
+    <!-- S T A R T   M A P  -->
+    <section class="map my-5 py-5">
+      <h3 class="mb-3 custom-heading text-center">
+        <span class="material-icons"> place </span>
+      </h3>
+      <h2 class="text-uppercase custom-underline text-center">open map</h2>
+    </section>
+    <!-- E N D   M A P  -->
+
+    <!-- S T A R T   F O O T E R  -->
+    <footer>
+      <div class="container border-bottom pb-5 mb-2">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="text-muted fw-bold">MoGo</h2>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <h5 class="border-bottom pb-1 mb-3">
+              15k <span class="fs-6 fw-light">followers</span>
+            </h5>
+            <p class="d-flex gap-2 social">
+              <span class="text-muted me-2 fst-italic">Follow Us:</span>
+              <span class="material-icons-outlined custom-color-two">
+                share
+              </span>
+              <span class="material-icons-outlined custom-color-two">
+                email
+              </span>
+              <span class="material-icons-outlined custom-color-two">
+                reply
+              </span>
+              <span class="material-icons-outlined custom-color-two">
+                share
+              </span>
+              <span class="material-icons-outlined custom-color-two">
+                email
+              </span>
+              <span class="material-icons-outlined custom-color-two">
+                reply
+              </span>
+            </p>
+            <div class="sub">
+              <input
+                type="email"
+                class="form-control fst-italic rounded-0"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="YourEmail"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p>BLOGS</p>
+            <div class="row">
+              <div class="col-4">
+                <img
+                  class="w-100"
+                  src="./assets/images/our-blog/img-4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-8">
+                <p class="custom-color">
+                  LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING
+                </p>
+                <p class="text-muted">Jan 9, 2016</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <img
+                  class="w-100"
+                  src="./assets/images/our-blog/img-5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-8">
+                <p class="custom-color">
+                  LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING
+                </p>
+                <p class="text-muted">Jan 9, 2016</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <img
+                  class="w-100"
+                  src="./assets/images/our-blog/img-6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-8">
+                <p class="custom-color">
+                  LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING
+                </p>
+                <p class="text-muted">Jan 9, 2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p>INSTAGRAM</p>
+            <div class="row g-1">
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-1.jpg" class="w-100" />
+              </div>
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-2.jpg" class="w-100" />
+              </div>
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-3.jpg" class="w-100" />
+              </div>
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-4.jpg" class="w-100" />
+              </div>
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-5.jpg" class="w-100" />
+              </div>
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-6.jpg" class="w-100" />
+              </div>
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-7.jpg" class="w-100" />
+              </div>
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-8.jpg" class="w-100" />
+              </div>
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-9.jpg" class="w-100" />
+              </div>
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-1.jpg" class="w-100" />
+              </div>
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-2.jpg" class="w-100" />
+              </div>
+              <div class="col-3">
+                <img src="./assets/images/instagram/img-3.jpg" class="w-100" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center">
+        Copyright © 2022 <span class="custom-color">MostafaKhafaji</span> All
+        Rights Reserved.
+      </p>
+    </footer>
+    <!-- E N D   F O O T E R  -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

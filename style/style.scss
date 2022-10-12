@@ -1,0 +1,318 @@
+@import "../sass/vars";
+@import "../sass/placeholder";
+@import "../sass/fonts";
+
+//     S T A R T  G L O B A L    R U L E S
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.custom-heading {
+  font-family: "Kaushan Script", cursive;
+  font-size: 20px;
+}
+html {
+  font-size: 16px;
+}
+p {
+  font-size: 0.8125rem;
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.custom-underline {
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
+  &::after {
+    @extend %underline;
+  }
+}
+
+//     E N D  G L O B A L    R U L E S
+
+//     S T A R T  S L I D E R    S E C T I O N
+
+.slider {
+  background-image: url(../assets/images/bg-header.jpg);
+  background-size: cover;
+  background-position: center center;
+  &::before {
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: $boxshwdow;
+    position: absolute;
+  }
+  .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 6rem;
+      font-weight: bold;
+      &::after {
+        background-color: #fff;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .carousel-caption h2 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 80%;
+    text-indent: 0px;
+  }
+  .carousel-indicators {
+    margin-right: 0%;
+    margin-left: 0%;
+    button {
+      position: relative;
+      height: 2px;
+      &.active,
+      &:hover {
+        background-color: #f38181;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 2px;
+        background-color: #fff;
+        top: 0;
+        width: 70%;
+      }
+    }
+  }
+}
+
+//     E N D   S L I D E R    S E C T I O N
+
+//     S T A R T   A B O U T   S E C T I O N
+
+.about {
+  .bg {
+    background-color: $bgsections;
+    position: relative;
+
+    img {
+      transition: $transition;
+    }
+    .overlay {
+      @extend %overlay;
+    }
+    &:hover img,
+    &:hover .overlay {
+      transform: translate(-10px, -10px);
+      opacity: 1;
+    }
+  }
+}
+
+//     E N D   A B O U T   S E C T I O N
+
+//     S T A R T   S T A T S   S E C T I O N
+
+.stats {
+  background-color: $bgsections;
+  .number {
+    font-size: 3.75rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+}
+
+//     E N D   S T A T S   S E C T I O N
+
+// S T A R T   S E R V I C E S
+@media (max-width: 768px) {
+  .services {
+    .service-border {
+      border-bottom: var(--bs-border-width) var(--bs-border-style)
+        var(--bs-border-color) !important;
+    }
+  }
+}
+
+// E N D   S E R V I C E S
+
+//     S T A R T   U N I Q U E   S E C T I O N
+
+.unique {
+  background-image: url(../assets/images/unique-design/bg-unique-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  img {
+    width: 380px;
+  }
+  .inner-img {
+    img {
+      width: 160px;
+      bottom: -60px;
+    }
+  }
+}
+
+//     E N D   U N I Q U E   S E C T I O N
+
+.testimonials-one,
+.testimonials-two {
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 5%;
+  }
+  .icon {
+    i {
+      font-size: 4rem;
+      color: #95e1d3;
+      border: 2px solid #95e1d3;
+    }
+  }
+  span.name {
+    &::before {
+      position: absolute;
+      content: "";
+      left: -3rem;
+      width: 75%;
+      height: 3px;
+      border-radius: 2px;
+      background-color: #f38181;
+      top: 50%;
+    }
+  }
+}
+
+//     S T A R T   W H A T - W E - D O   S E C T I O N
+
+.what-we-do {
+  h2.accordion-header span {
+    font-size: 14px;
+  }
+  .accordion-body {
+    overflow-y: scroll;
+    max-height: 200px;
+    text-align: left;
+    font-size: 12px;
+    &::-webkit-scrollbar {
+      width: 0.3rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #95e1d3;
+      outline: 1px solid #95e1d3;
+      border-radius: 5px;
+    }
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #fff;
+  }
+  .accordion-item:not(:first-of-type) {
+    border-top: 1px solid var(--bs-accordion-border-color);
+  }
+}
+
+//     E N D   W H A T - W E - D O   S E C T I O N
+
+//     S T A R T   O U R - T E A M   S E C T I O N
+
+.our-team {
+  .bg {
+    background-color: $bgsections;
+    position: relative;
+
+    img {
+      transition: $transition;
+    }
+    .overlay {
+      @extend %overlay;
+    }
+    &:hover img,
+    &:hover .overlay {
+      transform: translate(-10px, -10px);
+      opacity: 1;
+    }
+  }
+}
+
+//     E N D   O U R - T E A M   S E C T I O N
+
+//     S T A R T   H A P P Y   C L I E N T S
+.happy-clients {
+  background-image: url(../assets/images/happy-client/bg-happy-client.jpg);
+  background-size: cover;
+  background-position: center center;
+  .custom-underline.clients {
+    font-size: 14px;
+    &::after {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}
+//     E N D   H A P P Y   C L I E N T S
+
+//     S T A R T   O U R   S T O R I E S
+.our-stories {
+  .card-title {
+    color: #2ec06c;
+  }
+  .card-body i {
+    color: #95e1d3;
+  }
+  .card-date {
+    background-color: #95e1d3;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 70px;
+    color: #fff;
+    h5 {
+      font-weight: bold;
+    }
+  }
+  .card-link {
+    font-size: 12px;
+    i {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+  }
+}
+//     E N D   O U R   S T O R I E S
+
+//     S T A R T   M A P
+.map {
+  background-image: url(../assets/images/map/bg-map.jpg);
+  background-size: cover;
+  background-position: center center;
+  span {
+    color: #f38181;
+  }
+  .custom-underline {
+    color: #f38181;
+  }
+}
+//     E N D   M A P
+
+// S T A R T   F O O T E R
+footer {
+  .custom-color {
+    color: #2ec06c;
+  }
+  .custom-color-two {
+    color: #95e1d3;
+  }
+}
+// E N D   F O O T E R

@@ -1,0 +1,22 @@
+%underline {
+  content: "";
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: #fa7b7b;
+  position: absolute;
+}
+
+%overlay {
+  background-image: $boxshwdow;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  transition: $transition;
+  opacity: 0;
+}
